@@ -24,6 +24,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.springblade.common.constant.CommonConstant;
 import org.springblade.common.constant.JgyhwConstant;
 import org.springblade.common.tool.MD5Util;
+import org.springblade.core.launch.constant.AppConstant;
 import org.springblade.gateway.props.AuthProperties;
 import org.springblade.gateway.provider.AuthProvider;
 import org.springblade.gateway.provider.ResponseProvider;
@@ -66,7 +67,7 @@ public class AuthFilter implements GlobalFilter, Ordered {
 			return chain.filter(exchange);
 		}
 		ServerHttpResponse resp = exchange.getResponse();
-		if(path.indexOf(JgyhwConstant.APPLICATION_MANAGE_NAME) != -1){
+		if(path.indexOf(AppConstant.APPLICATION_NAME_PREFIX) != -1 || path.indexOf(JgyhwConstant.APPLICATION_MANAGE_NAME) != -1){
 			String headerToken = exchange.getRequest().getHeaders().getFirst(AuthProvider.AUTH_KEY);
 			String paramToken = exchange.getRequest().getQueryParams().getFirst(AuthProvider.AUTH_KEY);
 			if (StringUtils.isAllBlank(headerToken, paramToken)) {
