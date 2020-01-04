@@ -27,10 +27,19 @@ public interface CommonConstant {
 	 */
 	String TOP_PARENT_NAME = "顶级";
 
-
 	/**
 	 * 默认密码
 	 */
 	String DEFAULT_PASSWORD = "123456";
+
+	/**
+	 * MD5加密，盐
+	 */
+	String MD5_SALT = "!qazxcde32";
+
+	/**
+	 * 鉴权随机值Redis Key前缀
+	 */
+	String AUTH_NONCE_KEY_PREFIX = "authNonce:";
 
 }
