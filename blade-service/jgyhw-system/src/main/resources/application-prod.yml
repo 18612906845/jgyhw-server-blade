@@ -8,3 +8,16 @@ spring:
     url: ${blade.datasource.prod.url}
     username: ${blade.datasource.prod.username}
     password: ${blade.datasource.prod.password}
+
+# xxl-job
+xxl:
+  job:
+    admin:
+      addresses: http://172.17.80.166:9005/xxl-job-admin
+    executor:
+      appname: "jgyhw-system"
+      ip:
+      port: 19001
+      logpath: /usr/jgyhw-1.0/target/xxl-job-system
+      logretentiondays: 10
+    accessToken:
