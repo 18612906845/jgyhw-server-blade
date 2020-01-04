@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cn.com.jgyhw</groupId>
-    <artifactId>jgyhw-order</artifactId>
+    <artifactId>jgyhw-account</artifactId>
     <version>${jgyhw.project.version}</version>
     <packaging>jar</packaging>
 
@@ -19,6 +19,17 @@
             <groupId>org.springblade</groupId>
             <artifactId>blade-core-boot</artifactId>
             <version>${blade.tool.version}</version>
+        </dependency>
+        <!-- HttpClient -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>${http.components.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpmime</artifactId>
+            <version>${http.components.version}</version>
         </dependency>
         <!-- JD SDK -->
         <dependency>
@@ -35,22 +46,6 @@
             <groupId>org.codehaus.jackson</groupId>
             <artifactId>jackson-core-asl</artifactId>
             <version>${org.codehaus.jackson.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>cn.com.jgyhw</groupId>
-            <artifactId>jgyhw-order-api</artifactId>
-            <version>${jgyhw.project.version}</version>
-        </dependency>
-        <!-- xxl-job-core -->
-        <dependency>
-            <groupId>com.xuxueli</groupId>
-            <artifactId>xxl-job-core</artifactId>
-            <version>${xxl.job.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>cn.com.jgyhw</groupId>
-            <artifactId>jgyhw-goods-api</artifactId>
-            <version>${jgyhw.project.version}</version>
         </dependency>
         <dependency>
             <groupId>cn.com.jgyhw</groupId>

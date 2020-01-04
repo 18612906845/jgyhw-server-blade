@@ -25,11 +25,11 @@
             <artifactId>jgyhw-system-api</artifactId>
             <version>${jgyhw.project.version}</version>
         </dependency>
-        <!--<dependency>
+        <dependency>
             <groupId>cn.com.jgyhw</groupId>
             <artifactId>jgyhw-goods-api</artifactId>
             <version>${jgyhw.project.version}</version>
-        </dependency>-->
+        </dependency>
         <!-- xxl-job-core -->
         <dependency>
             <groupId>com.xuxueli</groupId>
