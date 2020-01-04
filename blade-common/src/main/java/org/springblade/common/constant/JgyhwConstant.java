@@ -20,7 +20,7 @@ public interface JgyhwConstant {
 	/**
 	 * 订单服务名称
 	 */
-	String APPLICATION_ORDER_NAME = "jgyhw-order";
+	String APPLICATION_ORDER_NAME = "jgyhw-order-wl";
 
 	/**
 	 * 账本服务名称

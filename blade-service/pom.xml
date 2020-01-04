@@ -24,6 +24,7 @@
         <module>blade-demo</module>
         <module>jgyhw-manage</module>
         <module>jgyhw-system</module>
+        <module>jgyhw-order</module>
     </modules>
 
     <dependencies>

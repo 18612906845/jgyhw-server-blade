@@ -23,6 +23,7 @@
         <module>blade-demo-api</module>
         <module>jgyhw-manage-api</module>
         <module>jgyhw-system-api</module>
+        <module>jgyhw-order-api</module>
     </modules>
 
     <dependencies>
