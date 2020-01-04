@@ -34,6 +34,8 @@
         <docker.plugin.version>1.2.0</docker.plugin.version>
 
         <jgyhw.project.version>1.0</jgyhw.project.version>
+        <dom4j.version>1.6.1</dom4j.version>
+        <xstream.version>1.4.7</xstream.version>
     </properties>
 
     <modules>
