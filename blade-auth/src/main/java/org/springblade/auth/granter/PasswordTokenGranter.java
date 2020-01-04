@@ -49,11 +49,14 @@ public class PasswordTokenGranter implements ITokenGranter {
 			R<UserInfo> result;
 			// 根据不同用户类型调用对应的接口返回数据，用户可自行拓展
 			if (userType.equals(BladeUserEnum.WEB.getName())) {
-				result = userClient.userInfo(tenantId, account, DigestUtil.encrypt(password));
+//				result = userClient.userInfo(tenantId, account, DigestUtil.encrypt(password));
+				result = userClient.userInfo(tenantId, account, password);
 			} else if (userType.equals(BladeUserEnum.APP.getName())) {
-				result = userClient.userInfo(tenantId, account, DigestUtil.encrypt(password));
+//				result = userClient.userInfo(tenantId, account, DigestUtil.encrypt(password));
+				result = userClient.userInfo(tenantId, account, password);
 			} else {
-				result = userClient.userInfo(tenantId, account, DigestUtil.encrypt(password));
+//				result = userClient.userInfo(tenantId, account, DigestUtil.encrypt(password));
+				result = userClient.userInfo(tenantId, account, password);
 			}
 			userInfo = result.isSuccess() ? result.getData() : null;
 		}
