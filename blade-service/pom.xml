@@ -25,6 +25,7 @@
         <module>jgyhw-manage</module>
         <module>jgyhw-system</module>
         <module>jgyhw-order</module>
+        <module>jgyhw-goods</module>
     </modules>
 
     <dependencies>

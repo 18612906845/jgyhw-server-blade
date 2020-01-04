@@ -10,7 +10,7 @@ public interface JgyhwConstant {
 	/**
 	 * 系统服务名称
 	 */
-	String APPLICATION_SYSTEM_NAME = "jgyhw-system-wl";
+	String APPLICATION_SYSTEM_NAME = "jgyhw-system";
 
 	/**
 	 * 商品服务名称
@@ -20,7 +20,7 @@ public interface JgyhwConstant {
 	/**
 	 * 订单服务名称
 	 */
-	String APPLICATION_ORDER_NAME = "jgyhw-order-wl";
+	String APPLICATION_ORDER_NAME = "jgyhw-order";
 
 	/**
 	 * 账本服务名称
