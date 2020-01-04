@@ -64,7 +64,7 @@ public class TokenUtil {
 		TokenInfo accessToken = SecureUtil.createJWT(param, "audience", "issuser", TokenConstant.ACCESS_TOKEN);
 		AuthInfo authInfo = new AuthInfo();
 		authInfo.setAccount(user.getAccount());
-		authInfo.setUserName(user.getRealName());
+		authInfo.setUserName(user.getName());
 		authInfo.setAuthority(Func.join(userInfo.getRoles()));
 		authInfo.setAccessToken(accessToken.getToken());
 		authInfo.setExpiresIn(accessToken.getExpire());
