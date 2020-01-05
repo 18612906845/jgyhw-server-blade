@@ -7,31 +7,31 @@ package org.springblade.common.constant;
  */
 public interface JgyhwConstant {
 
+	String suffix = "-wl";
+
 	/**
 	 * 系统服务名称
 	 */
-	String APPLICATION_SYSTEM_NAME = "jgyhw-system";
+	String APPLICATION_SYSTEM_NAME = "jgyhw-system" + suffix;
 
 	/**
 	 * 商品服务名称
 	 */
-	String APPLICATION_GOODS_NAME = "jgyhw-goods";
+	String APPLICATION_GOODS_NAME = "jgyhw-goods" + suffix;
 
 	/**
 	 * 订单服务名称
 	 */
-	String APPLICATION_ORDER_NAME = "jgyhw-order";
+	String APPLICATION_ORDER_NAME = "jgyhw-order" + suffix;
 
 	/**
 	 * 账本服务名称
 	 */
-	String APPLICATION_ACCOUNT_NAME = "jgyhw-account";
+	String APPLICATION_ACCOUNT_NAME = "jgyhw-account" + suffix;
 
 	/**
 	 * 管理服务名称
 	 */
-	String APPLICATION_MANAGE_NAME = "jgyhw-manage";
-
-
+	String APPLICATION_MANAGE_NAME = "jgyhw-manage" + suffix;
 
 }

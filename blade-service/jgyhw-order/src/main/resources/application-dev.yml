@@ -13,7 +13,7 @@ spring:
 xxl:
   job:
     admin:
-      addresses: http://172.17.80.166:9005/xxl-job-admin
+      addresses: http://39.106.8.177:9005/xxl-job-admin
     executor:
       appname: "jgyhw-order-dev"
       ip:
