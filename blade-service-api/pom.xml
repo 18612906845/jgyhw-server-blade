@@ -20,7 +20,6 @@
         <module>blade-dict-api</module>
         <module>blade-system-api</module>
         <module>blade-user-api</module>
-        <module>blade-demo-api</module>
         <module>jgyhw-manage-api</module>
         <module>jgyhw-system-api</module>
         <module>jgyhw-order-api</module>

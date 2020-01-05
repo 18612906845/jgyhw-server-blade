@@ -18,6 +18,6 @@ xxl:
       appname: "jgyhw-system"
       ip:
       port: 19001
-      logpath: /usr/jgyhw-1.0/target/xxl-job-system
+      logpath: /usr/jgyhw-1.0/logs/xxl-job-system
       logretentiondays: 10
     accessToken:

@@ -18,6 +18,6 @@ xxl:
       appname: "jgyhw-order"
       ip:
       port: 19003
-      logpath: /usr/jgyhw-1.0/target/xxl-job-order
+      logpath: /usr/jgyhw-1.0/logs/xxl-job-order
       logretentiondays: 10
     accessToken:

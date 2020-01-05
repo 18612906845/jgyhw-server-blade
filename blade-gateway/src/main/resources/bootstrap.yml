@@ -1,5 +1,5 @@
 server:
-  port: 80
+  port: 8000
 
 spring:
   cloud:
@@ -18,11 +18,21 @@ spring:
 blade:
   document:
     resources:
-      - name: 授权模块
+      - name: 基础授权模块
         location: /blade-auth
-      - name: 工作台模块
-        location: /blade-desk
-      - name: 系统模块
+      - name: 基础系统模块
         location: /blade-system
-
-
+      - name: 基础用户模块
+        location: /blade-user
+      - name: 基础日志模块
+        location: /blade-log
+      - name: 应用系统模块
+        location: /jgyhw-system
+      - name: 应用商品模块
+        location: /jgyhw-goods
+      - name: 应用订单模块
+        location: /jgyhw-order
+      - name: 应用账本模块
+        location: /jgyhw-account
+      - name: 应用管理模块
+        location: /jgyhw-manage
