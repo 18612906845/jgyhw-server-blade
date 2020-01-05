@@ -17,7 +17,6 @@
     <description>SpringBlade 微服务集合</description>
 
     <modules>
-        <module>blade-desk</module>
         <module>blade-log</module>
         <module>blade-system</module>
         <module>blade-user</module>
