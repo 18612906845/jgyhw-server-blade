@@ -7,7 +7,7 @@ package org.springblade.common.constant;
  */
 public interface JgyhwConstant {
 
-	String suffix = "-wl";
+	String suffix = "";
 
 	/**
 	 * 系统服务名称
