@@ -37,7 +37,6 @@
             <artifactId>jackson-core-asl</artifactId>
             <version>${org.codehaus.jackson.version}</version>
         </dependency>
-
         <dependency>
             <groupId>cn.com.jgyhw</groupId>
             <artifactId>jgyhw-goods-api</artifactId>

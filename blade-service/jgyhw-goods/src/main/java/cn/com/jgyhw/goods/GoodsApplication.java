@@ -2,7 +2,7 @@ package cn.com.jgyhw.goods;
 
 import org.springblade.common.constant.JgyhwConstant;
 import org.springblade.core.launch.BladeApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.SpringCloudApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
@@ -10,7 +10,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  *
  * Created by WangLei on 2019/11/21 0021 22:32
  */
-@SpringBootApplication
+@SpringCloudApplication
 @EnableFeignClients(basePackages = {"cn.com.jgyhw"})
 public class GoodsApplication {
 
