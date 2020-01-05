@@ -1,6 +1,6 @@
-package cn.com.jgyhw.vo;
+package cn.com.jgyhw.manage.vo;
 
-import cn.com.jgyhw.entity.Notice;
+import cn.com.jgyhw.manage.entity.Notice;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;

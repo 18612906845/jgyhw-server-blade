@@ -13,28 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.com.jgyhw.mapper;
+package cn.com.jgyhw.manage.service;
 
-import cn.com.jgyhw.entity.Notice;
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import cn.com.jgyhw.manage.entity.Notice;
 import com.baomidou.mybatisplus.core.metadata.IPage;
-
-import java.util.List;
+import org.springblade.core.mp.base.BaseService;
 
 /**
- * Mapper 接口
+ * 服务类
  *
  * @author Chill
  * @since 2018-09-29
  */
-public interface NoticeMapper extends BaseMapper<Notice> {
-
-	/**
-	 * 前N条数据
-	 * @param number
-	 * @return
-	 */
-	List<Notice> topList(Integer number);
+public interface INoticeService extends BaseService<Notice> {
 
 	/**
 	 * 自定义分页
@@ -42,6 +33,6 @@ public interface NoticeMapper extends BaseMapper<Notice> {
 	 * @param notice
 	 * @return
 	 */
-	List<Notice> selectNoticePage(IPage page, Notice notice);
+	IPage<Notice> selectNoticePage(IPage<Notice> page, Notice notice);
 
 }

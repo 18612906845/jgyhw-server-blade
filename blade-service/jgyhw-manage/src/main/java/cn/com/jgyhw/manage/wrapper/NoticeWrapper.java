@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.com.jgyhw.wrapper;
+package cn.com.jgyhw.manage.wrapper;
 
-import cn.com.jgyhw.entity.Notice;
-import cn.com.jgyhw.vo.NoticeVo;
+import cn.com.jgyhw.manage.entity.Notice;
+import cn.com.jgyhw.manage.vo.NoticeVo;
 import org.springblade.core.mp.support.BaseEntityWrapper;
 import org.springblade.core.tool.api.R;
 import org.springblade.core.tool.utils.BeanUtil;

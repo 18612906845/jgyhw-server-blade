@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.com.jgyhw.service.impl;
+package cn.com.jgyhw.manage.service.impl;
 
-import cn.com.jgyhw.entity.Notice;
-import cn.com.jgyhw.mapper.NoticeMapper;
-import cn.com.jgyhw.service.INoticeService;
+import cn.com.jgyhw.manage.entity.Notice;
+import cn.com.jgyhw.manage.mapper.NoticeMapper;
+import cn.com.jgyhw.manage.service.INoticeService;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import org.springblade.core.mp.base.BaseServiceImpl;
 import org.springframework.stereotype.Service;

@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.com.jgyhw.controller;
+package cn.com.jgyhw.manage.controller;
 
-import cn.com.jgyhw.entity.Notice;
-import cn.com.jgyhw.service.INoticeService;
-import cn.com.jgyhw.vo.NoticeVo;
-import cn.com.jgyhw.wrapper.NoticeWrapper;
+import cn.com.jgyhw.manage.entity.Notice;
+import cn.com.jgyhw.manage.service.INoticeService;
+import cn.com.jgyhw.manage.vo.NoticeVo;
+import cn.com.jgyhw.manage.wrapper.NoticeWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
 import io.swagger.annotations.*;

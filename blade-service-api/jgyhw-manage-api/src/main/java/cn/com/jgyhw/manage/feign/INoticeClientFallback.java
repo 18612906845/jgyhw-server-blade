@@ -1,6 +1,6 @@
-package cn.com.jgyhw.feign;
+package cn.com.jgyhw.manage.feign;
 
-import cn.com.jgyhw.entity.Notice;
+import cn.com.jgyhw.manage.entity.Notice;
 import org.springblade.core.tool.api.R;
 import org.springframework.stereotype.Component;
 

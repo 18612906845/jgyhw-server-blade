@@ -13,37 +13,25 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.com.jgyhw.feign;
+package cn.com.jgyhw.manage;
 
-import cn.com.jgyhw.entity.Notice;
 import org.springblade.common.constant.JgyhwConstant;
-import org.springblade.core.tool.api.R;
-import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-
-import java.util.List;
+import org.springblade.core.launch.BladeApplication;
+import org.springframework.cloud.client.SpringCloudApplication;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
- * 通知公告 Feign接口类
+ * Desk启动器
  *
  * @author Chill
  */
-@FeignClient(
-	value = JgyhwConstant.APPLICATION_MANAGE_NAME,
-	fallback = INoticeClientFallback.class
-)
-public interface INoticeClient {
+@SpringCloudApplication
+@EnableFeignClients(basePackages = {"cn.com.jgyhw"})
+public class ManageApplication {
 
-	String API_PREFIX = "/dashboard";
-
-	/**
-	 * 获取notice列表
-	 *
-	 * @param number
-	 * @return
-	 */
-	@GetMapping(API_PREFIX + "/top")
-	R<List<Notice>> top(@RequestParam("number") Integer number);
+	public static void main(String[] args) {
+		BladeApplication.run(JgyhwConstant.APPLICATION_MANAGE_NAME, ManageApplication.class, args);
+	}
 
 }
+
